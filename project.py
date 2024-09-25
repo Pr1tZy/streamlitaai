@@ -94,7 +94,7 @@ def login():
             if email in credentials and credentials[email]["password"] == password:
                 st.success(f"Welcome back, {credentials[email]['name']}!")
                 save_user_session(email)
-                st.rerun
+                st.rerun()
             else:
                 st.error("Invalid email or password.")
         else:
