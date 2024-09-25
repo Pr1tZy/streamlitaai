@@ -94,11 +94,11 @@ def login():
             if email in credentials and credentials[email]["password"] == password:
                 st.success(f"Welcome back, {credentials[email]['name']}!")
                 save_user_session(email)
+                st.rerun
             else:
                 st.error("Invalid email or password.")
         else:
             st.error("Please enter both email and password.")
-    st.rerun 
  
 # Marks input form for 7 subjects
 def input_marks(email):
