@@ -98,7 +98,7 @@ def login():
                 st.error("Invalid email or password.")
         else:
             st.error("Please enter both email and password.")
-     st.rerun 
+    st.rerun 
  
 # Marks input form for 7 subjects
 def input_marks(email):
